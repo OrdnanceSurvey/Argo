@@ -2,14 +2,6 @@ machine:
   xcode:
     version: "7.0"
 
-dependencies:
-  pre:
-    - bin/install-carthage
-  override:
-    - bin/carthage-bootstrap-if-needed
-  cache_directories:
-    - "Carthage"
-
 test:
   override:
     - bin/test
